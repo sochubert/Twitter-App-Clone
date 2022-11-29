@@ -13,6 +13,11 @@
 		53079A8A29361DEE0041FBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53079A8929361DEE0041FBD3 /* Assets.xcassets */; };
 		53079A8D29361DEE0041FBD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53079A8B29361DEE0041FBD3 /* LaunchScreen.storyboard */; };
 		53079A9B29361ED60041FBD3 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079A9A29361ED60041FBD3 /* MainTabController.swift */; };
+		53079A9D293620AC0041FBD3 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079A9C293620AC0041FBD3 /* FeedController.swift */; };
+		53079A9F293620E10041FBD3 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079A9E293620E10041FBD3 /* ExploreController.swift */; };
+		53079AA1293620EC0041FBD3 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079AA0293620EC0041FBD3 /* NotificationsController.swift */; };
+		53079AA3293620F70041FBD3 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079AA2293620F70041FBD3 /* ConversationsController.swift */; };
+		53079AA5293628EE0041FBD3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079AA4293628EE0041FBD3 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		53079A8C29361DEE0041FBD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53079A8E29361DEE0041FBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53079A9A29361ED60041FBD3 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		53079A9C293620AC0041FBD3 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		53079A9E293620E10041FBD3 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		53079AA0293620EC0041FBD3 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		53079AA2293620F70041FBD3 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		53079AA4293628EE0041FBD3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				53079A9A29361ED60041FBD3 /* MainTabController.swift */,
+				53079A9C293620AC0041FBD3 /* FeedController.swift */,
+				53079A9E293620E10041FBD3 /* ExploreController.swift */,
+				53079AA0293620EC0041FBD3 /* NotificationsController.swift */,
+				53079AA2293620F70041FBD3 /* ConversationsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,6 +125,7 @@
 		53079A9929361E500041FBD3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				53079AA4293628EE0041FBD3 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -186,9 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53079AA1293620EC0041FBD3 /* NotificationsController.swift in Sources */,
+				53079AA3293620F70041FBD3 /* ConversationsController.swift in Sources */,
 				53079A8129361DEC0041FBD3 /* AppDelegate.swift in Sources */,
+				53079AA5293628EE0041FBD3 /* Extensions.swift in Sources */,
+				53079A9F293620E10041FBD3 /* ExploreController.swift in Sources */,
 				53079A8329361DEC0041FBD3 /* SceneDelegate.swift in Sources */,
 				53079A9B29361ED60041FBD3 /* MainTabController.swift in Sources */,
+				53079A9D293620AC0041FBD3 /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
