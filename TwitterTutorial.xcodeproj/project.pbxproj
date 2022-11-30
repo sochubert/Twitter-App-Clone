@@ -18,6 +18,8 @@
 		53079AA1293620EC0041FBD3 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079AA0293620EC0041FBD3 /* NotificationsController.swift */; };
 		53079AA3293620F70041FBD3 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079AA2293620F70041FBD3 /* ConversationsController.swift */; };
 		53079AA5293628EE0041FBD3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079AA4293628EE0041FBD3 /* Extensions.swift */; };
+		53A222312937A4B800E1F994 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A222302937A4B800E1F994 /* LoginController.swift */; };
+		53A222332937A52300E1F994 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A222322937A52300E1F994 /* RegistrationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		53079AA0293620EC0041FBD3 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		53079AA2293620F70041FBD3 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 		53079AA4293628EE0041FBD3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		53A222302937A4B800E1F994 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		53A222322937A52300E1F994 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		53079A9529361E280041FBD3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				53A2222F2937A4AC00E1F994 /* Authentication */,
 				53079A9A29361ED60041FBD3 /* MainTabController.swift */,
 				53079A9C293620AC0041FBD3 /* FeedController.swift */,
 				53079A9E293620E10041FBD3 /* ExploreController.swift */,
@@ -128,6 +133,15 @@
 				53079AA4293628EE0041FBD3 /* Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		53A2222F2937A4AC00E1F994 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				53A222302937A4B800E1F994 /* LoginController.swift */,
+				53A222322937A52300E1F994 /* RegistrationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +222,8 @@
 				53079A9F293620E10041FBD3 /* ExploreController.swift in Sources */,
 				53079A8329361DEC0041FBD3 /* SceneDelegate.swift in Sources */,
 				53079A9B29361ED60041FBD3 /* MainTabController.swift in Sources */,
+				53A222312937A4B800E1F994 /* LoginController.swift in Sources */,
+				53A222332937A52300E1F994 /* RegistrationController.swift in Sources */,
 				53079A9D293620AC0041FBD3 /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
