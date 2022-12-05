@@ -18,6 +18,7 @@
 		53079AA1293620EC0041FBD3 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079AA0293620EC0041FBD3 /* NotificationsController.swift */; };
 		53079AA3293620F70041FBD3 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079AA2293620F70041FBD3 /* ConversationsController.swift */; };
 		53079AA5293628EE0041FBD3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53079AA4293628EE0041FBD3 /* Extensions.swift */; };
+		530D4DD5293E07770048EAAF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530D4DD4293E07770048EAAF /* Utilities.swift */; };
 		53A222312937A4B800E1F994 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A222302937A4B800E1F994 /* LoginController.swift */; };
 		53A222332937A52300E1F994 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A222322937A52300E1F994 /* RegistrationController.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		53079AA0293620EC0041FBD3 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		53079AA2293620F70041FBD3 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 		53079AA4293628EE0041FBD3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		530D4DD4293E07770048EAAF /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		53A222302937A4B800E1F994 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		53A222322937A52300E1F994 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				53079AA4293628EE0041FBD3 /* Extensions.swift */,
+				530D4DD4293E07770048EAAF /* Utilities.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				53079AA1293620EC0041FBD3 /* NotificationsController.swift in Sources */,
 				53079AA3293620F70041FBD3 /* ConversationsController.swift in Sources */,
+				530D4DD5293E07770048EAAF /* Utilities.swift in Sources */,
 				53079A8129361DEC0041FBD3 /* AppDelegate.swift in Sources */,
 				53079AA5293628EE0041FBD3 /* Extensions.swift in Sources */,
 				53079A9F293620E10041FBD3 /* ExploreController.swift in Sources */,
