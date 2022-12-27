@@ -41,13 +41,7 @@ class MainTabController: UITabBarController {
     }
     
     // MARK: - API
-    
-    func fetchTweets() {
-        TweetService.shared.fetchTweets { tweets in
-            print("DEBUG: Tweets are \(tweets)")
-        }
-    }
-    
+
     func fetchUser() {
         UserService.shared.fetchUser { user in
             self.user = user
@@ -65,7 +59,6 @@ class MainTabController: UITabBarController {
             configureViewControllers()
             configureUI()
             fetchUser()
-            fetchTweets()
         }
     }
     
@@ -97,7 +90,7 @@ class MainTabController: UITabBarController {
     }
     
     func configureViewControllers() {
-        let feed = FeedController()
+        let feed = FeedController(collectionViewLayout: UICollectionViewFlowLayout())
         let nav1 =  templateNavigationController(image: UIImage(named: "home_unselected")!, rootViewController: feed)
         
         let explore = ExploreController()
