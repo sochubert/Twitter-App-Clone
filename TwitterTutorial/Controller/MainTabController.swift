@@ -42,6 +42,12 @@ class MainTabController: UITabBarController {
     
     // MARK: - API
     
+    func fetchTweets() {
+        TweetService.shared.fetchTweets { tweets in
+            print("DEBUG: Tweets are \(tweets)")
+        }
+    }
+    
     func fetchUser() {
         UserService.shared.fetchUser { user in
             self.user = user
@@ -59,6 +65,7 @@ class MainTabController: UITabBarController {
             configureViewControllers()
             configureUI()
             fetchUser()
+            fetchTweets()
         }
     }
     
