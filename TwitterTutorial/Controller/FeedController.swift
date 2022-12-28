@@ -18,8 +18,6 @@ class FeedController: UICollectionViewController {
         didSet { configureLeftBarButton() }
     }
     
-    
-    // 이 코드를 적어 줌으로써, 아래 fetchTweets()를 통해 tweets에 값이 할당되면 reloadData를 시켜 CollectionView를 다시 한번 리로딩하여 count가 몇개인지 정확하게 알수 있다. didSet을 통해 reload를 안해준다면 빈 배열로 들어가버린다.
     private var tweets = [Tweet]() {
         didSet { collectionView.reloadData() }
     }
@@ -75,6 +73,9 @@ extension FeedController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! TweetCell
+        
+        cell.tweet = tweets[indexPath.row]
+        
         return cell
     }
 }
