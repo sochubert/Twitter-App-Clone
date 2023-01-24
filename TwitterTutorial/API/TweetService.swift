@@ -29,7 +29,6 @@ struct TweetService {
     
     func fetchTweets(completion: @escaping([Tweet]) -> Void) {
         var tweets = [Tweet]()
-        
         REF_TWEETS.observe(.childAdded) { snapshot in
             guard let dictionary = snapshot.value as? [String : Any] else { return }
             guard let uid = dictionary["uid"] as? String else  { return }
@@ -93,6 +92,14 @@ struct TweetService {
             REF_USER_LIKES.child(uid).updateChildValues([tweet.tweetID: 1]) { (err, ref) in
                 REF_TWEET_LIKES.child(tweet.tweetID).updateChildValues([uid: 1], withCompletionBlock: completion)
             }
+        }
+    }
+    
+    func checkIfUserLikedTweet(_ tweet: Tweet, completion: @escaping(Bool) -> Void) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
+        REF_USER_LIKES.child(uid).child(tweet.tweetID).observeSingleEvent(of: .value) { snapshot in
+            completion(snapshot.exists())
         }
     }
 }
