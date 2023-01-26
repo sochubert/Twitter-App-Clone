@@ -39,6 +39,7 @@
 		53A222332937A52300E1F994 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A222322937A52300E1F994 /* RegistrationController.swift */; };
 		53B92FA02955B46500503092 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B92F9F2955B46500503092 /* AuthService.swift */; };
 		53C7BC942961AD4A005D8E0F /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7BC932961AD4A005D8E0F /* ProfileHeaderViewModel.swift */; };
+		53DA49FC2982B2430009B797 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DA49FB2982B2430009B797 /* NotificationViewModel.swift */; };
 		53EFB6DB2980A923003C2062 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFB6DA2980A923003C2062 /* Notification.swift */; };
 		53EFB6DD2980AC9B003C2062 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFB6DC2980AC9B003C2062 /* NotificationService.swift */; };
 		53EFB6DF2980B269003C2062 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFB6DE2980B269003C2062 /* NotificationCell.swift */; };
@@ -85,6 +86,7 @@
 		53A222322937A52300E1F994 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		53B92F9F2955B46500503092 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		53C7BC932961AD4A005D8E0F /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		53DA49FB2982B2430009B797 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		53EFB6DA2980A923003C2062 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		53EFB6DC2980AC9B003C2062 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		53EFB6DE2980B269003C2062 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				53C7BC932961AD4A005D8E0F /* ProfileHeaderViewModel.swift */,
 				53F19B24297E749800724437 /* UploadTweetViewModel.swift */,
 				534619E6297FAED8004B969E /* ActionSheetViewModel.swift */,
+				53DA49FB2982B2430009B797 /* NotificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				530D4DD5293E07770048EAAF /* Utilities.swift in Sources */,
 				534619E5297FA68B004B969E /* ActionSheetCell.swift in Sources */,
 				53079A8129361DEC0041FBD3 /* AppDelegate.swift in Sources */,
+				53DA49FC2982B2430009B797 /* NotificationViewModel.swift in Sources */,
 				53079AA5293628EE0041FBD3 /* Extensions.swift in Sources */,
 				53FBE78D297CFE1000202FD0 /* TweetController.swift in Sources */,
 				5306D4D3295EED900024E644 /* ProfileController.swift in Sources */,
