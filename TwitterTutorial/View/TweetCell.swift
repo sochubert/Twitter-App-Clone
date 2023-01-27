@@ -132,7 +132,7 @@ class TweetCell: UICollectionViewCell {
     }
     
     @objc func handleCommentTapped() {
-        delegate!.handleReplyTapped(self)
+        delegate?.handleReplyTapped(self)
     }
     
     @objc func handleRetweetTapped() {
