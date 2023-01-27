@@ -36,6 +36,14 @@ class NotificationsController: UITableViewController {
     func fetchNotifications() {
         NotificationService.shared.fetchNotifications { notifications in
             self.notifications = notifications
+            for (index, notification) in notifications.enumerated() {
+                if case .follow = notification.type {
+                    let user = notification.user
+                    UserService.shared.checkUserIsFollowing(uid: user.uid) { isFollowed in
+                        self.notifications[index].user.isFollowed = isFollowed
+                    }
+                }
+            }
         }
     }
     
@@ -70,9 +78,9 @@ extension NotificationsController {
 extension NotificationsController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let notification = notifications[indexPath.row]
-//        guard let tweetID = notification.tweetID else { return }
+        guard let tweetID = notification.tweetID else { return }
         
-        TweetService.shared.fetchTweet(withTweetID: notification.tweetID) { tweet in
+        TweetService.shared.fetchTweet(withTweetID: tweetID) { tweet in
             let controller = TweetController(tweet: tweet)
             self.navigationController?.pushViewController(controller, animated: true)
         }
@@ -82,6 +90,10 @@ extension NotificationsController {
 // MARK: - NotificationCellDelegate
 
 extension NotificationsController: NotificationCellDelegate {
+    func didTapFollow(_ cell: NotificationCell) {
+        print("DEBUG: Handle follow tap..")
+    }
+    
     func didTapProfileImage(_ cell: NotificationCell) {
         guard let user = cell.notification?.user else { return }
         let controller = ProfileController(user: user)
